@@ -197,9 +197,30 @@ class action_plugin_switchpanel extends DokuWiki_Action_Plugin {
                 ),
                 array(
                     'type'   => 'insert',
+                    'title'  => $this->getLang('sfp'),
+                    'icon'   => '../../plugins/switchpanel/pics/none.png',
+                    'insert' => 'XX,sfp:case=sfp\n',
+                    'block'  => false
+                ),
+                array(
+                    'type'   => 'insert',
+                    'title'  => $this->getLang('sfpplus'),
+                    'icon'   => '../../plugins/switchpanel/pics/none.png',
+                    'insert' => 'XX,sfp+:case=sfpplus\n',
+                    'block'  => false
+                ),
+                array(
+                    'type'   => 'insert',
+                    'title'  => $this->getLang('usb'),
+                    'icon'   => '../../plugins/switchpanel/pics/none.png',
+                    'insert' => 'XX,usb:case=usb\n',
+                    'block'  => false
+                ),
+                array(
+                    'type'   => 'insert',
                     'title'  => $this->getLang('syntax'),
                     'icon'   => '../../plugins/switchpanel/pics/syntax.png',
-                    'insert' => '<code>\nIndex,Label:color="color|#rgb",case="rj45|of|2of|gbic|none|serial|close",text="Information",link="proto://url",target="page|_new|_blank"\n</code>\n',
+                    'insert' => '<code>\nIndex,Label:color="color|#rgb",case="rj45|of|2of|gbic|none|serial|close|sfp|sfpplus|usb",text="Information",link="proto://url",target="page|_new|_blank"\n</code>\n',
                     'bolck'  => false
                 )
             )
